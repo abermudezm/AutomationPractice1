@@ -27,7 +27,7 @@ public class LoginSteps {
 
     @When("click on My Account menu")
     public void clickOnMyAccountMenu() {
-        System.out.println("Step Implementation");
+        System.out.println("abm: clickOnMyAccountMenu");
     }
 
     @And("enter valid username")
