@@ -8,7 +8,7 @@ import io.cucumber.junit.Cucumber;
 @CucumberOptions(
         features = {"src/test/resources/features"},
         glue = {"stepsdefinitions","hooks"},
-        tags = "@SmokeTest or @RegularTest",
+        tags = "not @ignore",
         plugin = {"pretty",
                   "html:target/SystemTestReports/html.html",
                   "json:target/SystemTestReports/json/report.json",

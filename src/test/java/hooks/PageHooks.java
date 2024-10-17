@@ -2,6 +2,7 @@ package hooks;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import stepsdefinitions.LoginSteps;
 
 public class PageHooks {
 
@@ -13,5 +14,6 @@ public class PageHooks {
     @After
     public void After(){
         System.out.println("After hook");
+        LoginSteps.driver.close();
     }
 }
